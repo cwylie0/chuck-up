@@ -47,26 +47,19 @@ if (foo > 1000)
   Math.random2 (0,6) => note[3];
 
 while (true) { //infinite loop
-  int i, j;
-    for (; j<=7; j++) {
       Std.mtof( 48 + mixo[note[0]] ) => inst.freq; //set the note
       inst.noteOn( 0.5 ); //play a note at half volume
       foo::ms => now; //compute audio for 0.3 sec
-    }
-    for (; j<=7; j++) {
       Std.mtof( 48 + mixo[note[1]] ) => inst.freq; //set the note
       inst.noteOn( 0.5 ); //play a note at half volume
       foo::ms => now; //compute audio for 0.3 sec
-    }
-    for (; j<=7; j++) {
       Std.mtof( 48 + mixo[note[2]] ) => inst.freq; //set the note
       inst.noteOn( 0.5 ); //play a note at half volume
       foo::ms => now; //compute audio for 0.3 sec
-    }
-    for (; j<=7; j++) {
       Std.mtof( 48 + mixo[note[3]] ) => inst.freq; //set the note
       inst.noteOn( 0.5 ); //play a note at half volume
       foo::ms => now; //compute audio for 0.3 sec
-    }
+
+
 }
 
